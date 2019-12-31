@@ -33,7 +33,7 @@ def write_data_point(api_key, mac, field, data):
         return render_template("showrecent.html", data=data, time_stamp=date_time_str)
 
     else:
-        return render_template("403.html")
+        return render_template("error.html")
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
