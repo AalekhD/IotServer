@@ -9,8 +9,8 @@ app = Flask(__name__)
 
 
 #not a good idea to keep API_KEY and white-listed Mac address here
-API_key = "GTW89NF3"
-mac = "6c:rf:7f:2b:0e:g8"
+API_KEY = "GTW89NF3"
+MAC_ADDRESS = "6c:rf:7f:2b:0e:g8"
 
 @app.route("/")
 def index():
