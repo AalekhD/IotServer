@@ -27,7 +27,7 @@ def update(api_key, mac, field, data):
 @app.route("/update/API_key=<api_key>/mac=<mac>/field=<int:field>/data=<data>", methods=['GET'])
 def write_data_point(api_key, mac, field, data):
     if (api_key == API_KEY and mac == MAC_ADDRESS):
-        t = datetime.datetime.now(tz=pytz.timezone('America/Los_Angeles'))
+        t = datetime.datetime.now(tz=pytz.timezone('Indian/Maldives'))
         date_time_str = t.isoformat()
 
         return render_template("showrecent.html", data=data, time_stamp=date_time_str)
