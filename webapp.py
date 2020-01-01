@@ -73,6 +73,7 @@ def write_data_point(api_key, mac, field, data):
         lastKeySwipped = data
     
     if (api_key == API_KEY and mac == MAC_ADDRESS):
+        print("Data Updated " + str(field) + str(data))
         conn = sqlite3.connect('data.db')
         c = conn.cursor()
         t = datetime.datetime.now(tz=pytz.utc)

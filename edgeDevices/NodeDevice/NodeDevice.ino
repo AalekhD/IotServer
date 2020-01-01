@@ -103,7 +103,7 @@ void Website_Connection(){
   Serial.println(WiFi.localIP());  //IP address assigned to your ESP
 
   
-  http.begin("http://192.168.0.104:5000/update/API_key=GTW89NF3/mac=6c:rf:7f:2b:0e:g8/field=2/data=7922798626");              //Specify request destination
+  http.begin("http://68.183.90.145:5000/update/API_key=GTW89NF3/mac=6c:rf:7f:2b:0e:g8/field=2/data=7922798626");              //Specify request destination
   //http.addHeader("Content-Type", "application/x-www-form-urlencoded");    //Specify content-type header
 
   //http.begin("http://192.168.43.128/c4yforum/postdemo.php");              //Specify request destination
