@@ -90,6 +90,10 @@ def write_data_point(api_key, mac, field, data):
         print('did not match')
         return render_template("error.html")
 
-
+@app.route("/demo")
+def demo():
+    return render_template("demo.html")
+    
+    
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
